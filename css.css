@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body {
-    min-height: 100vh;
-    background-color: aqua;
     font-family: sans-serif;
+    min-height: 98.3vh;
+    background-image: linear-gradient(45deg, purple, black);
     display: grid;
     place-items: center;
 }
 
+
+h1 {
+    font-family: Oswald;
+}
 p {
     font-size: 1.3125rem;
     font-weight: 700;
@@ -35,5 +41,38 @@ input {
     padding: 1rem 0 0,5rem 0;
     width: 100%;
     border: none;
-    border-color:;
+    border-color: #a0a0a0;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    margin-bottom: 3rem;
+    transition: 0.15s linear;
 }
+
+input:focus {
+    outline: none;
+    border-color: #8d3dc8;
+}
+
+button {
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    color: #81259d;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0,25s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #8d3dc8;
+    color: #fff;
+}
+
